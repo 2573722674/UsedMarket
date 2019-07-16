@@ -10,12 +10,8 @@ import android.view.View;
 import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int TIME=3000;
+    private static final int TIME = 1000;
 
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        super.onCreateContextMenu(menu, v, menuInfo);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +22,16 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent=new Intent(MainActivity.this, Login.class);
+                Intent intent = new Intent(MainActivity.this, Login.class);
                 startActivity(intent);
                 finish();
             }
-        },TIME);
-
-
-
+        }, TIME);
     }
 
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
 
 }
