@@ -26,23 +26,23 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/ET_1"
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
             android:layout_toRightOf="@id/TV_1" />
 
         <EditText
-            android:id="@+id/ET_2"
+            android:id="@+id/passWord"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/ET_1"
+            android:layout_below="@id/userName"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/TV_2" />
         <Button
             android:text="注册"
             android:id="@+id/registerBtn"
-            android:layout_below="@+id/ET_2"
+            android:layout_below="@+id/passWord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="GoodMarket" />
+    <version value="2" />
+    <list>
+        <mapping class="com.example.usedmarket.db.Good" />
+        <mapping class="com.example.usedmarket.db.Activity_db"/>
+    </list>
+</litepal>

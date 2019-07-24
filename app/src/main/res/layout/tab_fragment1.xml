@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <Button
-        android:text="发布活动"
-        android:id="@+id/putBtn"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    android:layout_height="match_parent">
 
     <android.support.v4.widget.SwipeRefreshLayout
-        android:id="@+id/putRefresh"
+        android:id="@+id/refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/putRecycler"
+            android:id="@+id/recyclerMarket"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#FFFFDD">
 
         </android.support.v7.widget.RecyclerView>
-
     </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

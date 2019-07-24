@@ -1,15 +1,15 @@
 package com.example.usedmarket;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.usedmarket.R;
 
-public class Register extends AppCompatActivity {
+public class Setting extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_setting);
     }
 }

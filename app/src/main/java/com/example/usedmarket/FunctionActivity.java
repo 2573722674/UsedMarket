@@ -1,13 +1,19 @@
 package com.example.usedmarket;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.example.usedmarket.db.Good;
+import com.example.usedmarket.function.FragmentAdapter;
+import com.example.usedmarket.function.FragmentMarket;
+import com.example.usedmarket.function.FragmentPersonalCenter;
+import com.example.usedmarket.function.FragmentPutactivity;
+
+import org.litepal.LitePal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +24,8 @@ public class FunctionActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private List<Fragment> fragmentList;
     private FragmentAdapter fragmentAdapter;
+
+
 
 
     @Override
@@ -74,6 +82,11 @@ public class FunctionActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+
+
 
     }
 }

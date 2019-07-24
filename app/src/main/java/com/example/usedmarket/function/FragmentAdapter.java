@@ -1,4 +1,4 @@
-package com.example.usedmarket;
+package com.example.usedmarket.function;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,6 +10,8 @@ public class FragmentAdapter extends FragmentPagerAdapter {
 
 
     private List<Fragment> fragmentList;
+
+
     public FragmentAdapter(FragmentManager fm,List<Fragment> fragmentList) {
         super(fm);
         this.fragmentList=fragmentList;

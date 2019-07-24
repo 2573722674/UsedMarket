@@ -1,11 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:text="我的"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_person">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/person"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="150dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:id="@+id/objects"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="已购商品"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+        <LinearLayout
+            android:id="@+id/played"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="已参加的活动"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+    <LinearLayout
+        android:id="@+id/sold"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="已售商品"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+        <LinearLayout
+            android:id="@+id/putactivity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="创建的活动"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+        <LinearLayout
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="软件设置"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
