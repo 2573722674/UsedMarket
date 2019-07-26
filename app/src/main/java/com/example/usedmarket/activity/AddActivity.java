@@ -40,7 +40,6 @@ public class AddActivity extends AppCompatActivity {
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("---------------------------"+activityName.getText().toString());
                 ProgressDialog progressDialog=new ProgressDialog(AddActivity.this);
                 progressDialog.setTitle("正在发布中");
                 progressDialog.setMessage("Posting...");
